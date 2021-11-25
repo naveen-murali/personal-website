@@ -171,7 +171,8 @@
           <p class="p-3">
             Learning is a lifelong process and having the best positive attitude towards learning can have great impact
             on what you will achieve in life. Nobody plans to fail, often we fail to plan. For the best results both
-            while learning and working we should work to developing the correct mental attitude. So I won't stop even if I reach my destination.
+            while learning and working we should work to developing the correct mental attitude. So I won't stop even if
+            I reach my destination.
           </p>
         </div>
       </div>
@@ -268,8 +269,7 @@
 
         <div class="gridder my-3">
           <div class="grid-item design wow zoomIn">
-            <div class="img-place" data-src="./assets/img/work/work-1.png" data-fancybox
-              data-caption="
+            <div class="img-place" data-src="./assets/img/work/work-1.png" data-fancybox data-caption="
               <a href='https://naveen-murali.github.io/netflix-clone/' target='_blank' class='h5 fg-theme'>Netflix - Clone</a>
               <p>
                 HTML5 & CSS3 <br>
@@ -288,8 +288,7 @@
           </div>
 
           <div class="grid-item design wow zoomIn">
-            <div class="img-place" data-src="./assets/img/work/work-4.png" data-fancybox
-              data-caption="
+            <div class="img-place" data-src="./assets/img/work/work-4.png" data-fancybox data-caption="
               <a href='https://naveen-murali.github.io/google-store-clone/' target='_blank' class='h5 fg-theme'>Google Store - Clone</a>
               <p>HTML5 & CSS3 <br>
                 A program will have to rewrite same code several time, but each time he/she will rewrites a code it
@@ -307,8 +306,7 @@
           </div>
 
           <div class="grid-item design wow zoomIn">
-            <div class="img-place" data-src="./assets/img/work/work-3.png" data-fancybox
-              data-caption="
+            <div class="img-place" data-src="./assets/img/work/work-3.png" data-fancybox data-caption="
                 <a href='https://naveen-murali.github.io/youtube-clone/' target='_blank' class='h5 fg-theme'>YouTube - Clone</a>
                 <p>
                   HTML5 & CSS3<br>
@@ -329,8 +327,7 @@
           </div>
 
           <div class="grid-item design wow zoomIn">
-            <div class="img-place" data-src="./assets/img/work/work-4.png" data-fancybox
-              data-caption="
+            <div class="img-place" data-src="./assets/img/work/work-4.png" data-fancybox data-caption="
                 <a href='https://naveen-murali.github.io/google-bootstrap-clone/' target='_blank' class='h5 fg-theme'>Google Store - Clone</a>
                 <p>
                   HTML5, CSS3, Bootstrap5 & JavaScript <br>
@@ -399,8 +396,10 @@
       <div class="container-fluid">
         <div class="row py-5">
           <div class="col-lg-12">
-            <form class="vg-contact-form" id="contact-form">              
-              <div id="main-alert"></div>
+            <form class="vg-contact-form" id="contact-form" method="post"
+              action="https://script.google.com/macros/s/AKfycbx_kA9qYtsPCifMHioiJfKaoBpyYtB8besGmRGXrb3kC6LJ5vMr8tabm07lQT4vls-u/exec">
+              <div id="main-alert">
+              </div>
               <div class="form-row">
                 <div class="col-12 wow fadeInUp">
                   <input class="form-control" type="text" name="name" placeholder="Your Name">
@@ -418,13 +417,18 @@
               </div>
               <p class="pt-4 text-justify">
                 Do you want to want to know more about me ? Then it goes like this, <br>
-                I am Naveen Murali from Kannur. My father Muralidharan is a contractor and mother Suja P V is a collection agent at Payyannur Rural-Bank.
+                I am Naveen Murali from Kannur. My father Muralidharan is a contractor and mother Suja P V is a
+                collection agent at Payyannur Rural-Bank.
                 I have a sibling an older sister who works as an Accountent trainee. <br>
-                My main profession was electronics engineering. But after the pandemic, when we where in lockdown I started learning codding just for fun to pass time.
-                But after getting deep into it I kind of being flexible in that world, that is I started understand so many things by which I became like 'I wanna learn more'.
+                My main profession was electronics engineering. But after the pandemic, when we where in lockdown I
+                started learning codding just for fun to pass time.
+                But after getting deep into it I kind of being flexible in that world, that is I started understand so
+                many things by which I became like 'I wanna learn more'.
                 So I dived kinda deep and Learned things that I think is interesting. <br>
-                After 1 year from when pandemic hit I started to that should have to continue my current profesion or should I have to go with what I am more interested in?
-                In the end I choose to listen My second option and came to Crossroads or now days Brototype crossroads. <br>
+                After 1 year from when pandemic hit I started to that should have to continue my current profesion or
+                should I have to go with what I am more interested in?
+                In the end I choose to listen My second option and came to Crossroads or now days Brototype crossroads.
+                <br>
                 Yeah thats where my life is currently standing...
               </p>
             </form>
@@ -435,7 +439,6 @@
 
     <!-- Footer -->
     <div class="vg-footer">
-      <h1 class="text-center">Virtual Folio</h1>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 py-3">
@@ -492,24 +495,23 @@
   <script src="./assets/js/minibar-virtual.js"></script>
 
   <script>
-    $(document).ready(function() {
-      $("#contact-form").submit((e)=>{
+    $(document).ready(function () {
+      $("#contact-form").submit((e) => {
         e.preventDefault();
         let formData = $("#contact-form").serializeArray();
-
         let alerts_details = [];
         let alerts = "";
 
-        formData.forEach(({name, value})=>{
-          if(!value)
+        formData.forEach(({ name, value }) => {
+          if (!value)
             alerts_details.push(`"${name.charAt(0).toUpperCase() + name.slice(1)}" field is empty.`);
-          
-          if(value && name == "email" && !isEmail(value))
+
+          if (value && name == "email" && !isEmail(value))
             alerts_details.push("Please enter a valid email address");
         });
 
-        alerts_details.forEach((value)=>{
-          alerts+=`
+        alerts_details.forEach((value) => {
+          alerts += `
             <div class="alert alert-danger alert-dismissible fade show" role="alert">
               <em>${value}</em>
               <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -518,7 +520,48 @@
             </div>`;
         })
 
-        $("#main-alert").html(alerts);
+        if (alerts) {
+          $("#main-alert").html(alerts);
+          alerts = "";
+        } else {
+          $("#main-alert").html(`
+                <div class="spinner-grow spinner-grow-sm text-danger" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow spinner-grow-sm text-danger" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <div class="spinner-grow spinner-grow-sm text-danger" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>`)
+          $.ajax({
+            type: "post",
+            url: "https://script.google.com/macros/s/AKfycbx_kA9qYtsPCifMHioiJfKaoBpyYtB8besGmRGXrb3kC6LJ5vMr8tabm07lQT4vls-u/exec",
+            data: $("#contact-form").serialize(),
+            success: function (response) {
+              $("#main-alert").html(`
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                  <strong>Details Successfully submitted</strong>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              `);
+              $("#contact-form").trigger('reset');
+            },
+            error:function (error){              
+              $("#main-alert").html(`
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <em>Submission failed.</em>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+              `);
+            }
+          });
+        }
+
       })
     });
 
