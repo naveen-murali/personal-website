@@ -402,14 +402,14 @@
               </div>
               <div class="form-row">
                 <div class="col-12 wow fadeInUp">
-                  <input class="form-control" type="text" name="name" placeholder="Your Name">
+                  <input class="form-control" type="text" name="name" onkeypress="return onlyStringKey(event)" placeholder="Your Name">
                 </div>
                 <div class="col-12 wow fadeInUp">
-                  <input class="form-control" id="phone" type="text" name="phone" placeholder="Phone Number" maxlength="10"> 
+                  <input class="form-control" id="email" type="text" name="email" onkeypress="return noSpace(event)" placeholder="Email Address">
                   <div id="phoneDiv"></div>
                 </div>
                 <div class="col-6 wow fadeInUp">
-                  <input class="form-control" type="text" name="email" placeholder="Email Address">
+                  <input class="form-control" type="tel" name="phone" onkeypress="return onlyNumberKey(event)" placeholder="Phone Number" maxlength="10"> 
                 </div>
                 <div class="col-6 wow fadeInUp">
                   <input class="form-control" type="text" name="subject" placeholder="Subject">
@@ -497,95 +497,7 @@
   <script src="./assets/vendor/animateNumber/jquery.animateNumber.min.js"></script>
   <script src="./assets/vendor/waypoints/jquery.waypoints.min.js"></script>
   <script src="./assets/js/minibar-virtual.js"></script>
-
-  <script>
-    $(document).ready(function () {
-      $("#phone").on('input', (e)=>{
-        let value = e.target.value;
-        let phoneno = /^\d{10}$/;
-        if(!value.match(phoneno) && value)
-          $("#phoneDiv").html(`<p class="text-danger p-2" style="font-size: 12px;">Phone number should have only numarical and max-length of 10</p>`)
-        
-        if(!value || (value.match(phoneno) && value.length == 10)){
-          $("#phoneDiv").html("");
-        }
-      })
-
-
-      $("#contact-form").submit((e) => {
-        e.preventDefault();
-        let formData = $("#contact-form").serializeArray();
-        let alerts_details = [];
-        let alerts = "";
-
-        formData.forEach(({ name, value }) => {
-          if (!value)
-            alerts_details.push(`"${name.charAt(0).toUpperCase() + name.slice(1)}" field is empty.`);
-
-          if (value && name == "email" && !isEmail(value))
-            alerts_details.push("Please enter a valid email address");
-        });
-
-        alerts_details.forEach((value) => {
-          alerts += `
-            <div class="alert alert-danger alert-dismissible fade show" role="alert">
-              <em>${value}</em>
-              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-              </button>
-            </div>`;
-        })
-
-        if (alerts) {
-          $("#main-alert").html(alerts);
-          alerts = "";
-        } else {
-          $("#main-alert").html(`
-                <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                  <span class="sr-only">Loading...</span>
-                </div>
-                <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                  <span class="sr-only">Loading...</span>
-                </div>
-                <div class="spinner-grow spinner-grow-sm text-danger" role="status">
-                  <span class="sr-only">Loading...</span>
-                </div>`)
-          $.ajax({
-            type: "post",
-            url: "https://script.google.com/macros/s/AKfycbx_kA9qYtsPCifMHioiJfKaoBpyYtB8besGmRGXrb3kC6LJ5vMr8tabm07lQT4vls-u/exec",
-            data: $("#contact-form").serialize(),
-            success: function (response) {
-              $("#main-alert").html(`
-                <div class="alert alert-success alert-dismissible fade show" role="alert">
-                  <strong>Details Successfully submitted</strong>
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-              `);
-              $("#contact-form").trigger('reset');
-            },
-            error:function (error){              
-              $("#main-alert").html(`
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                  <em>Submission failed.</em>
-                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-              `);
-            }
-          });
-        }
-
-      })
-    });
-
-    function isEmail(email) {
-      let regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-      return regex.test(email);
-    }
-  </script>
+  <script src="./assets/js/js.js"></script>
 </body>
 
 </html>
