@@ -404,6 +404,10 @@
                 <div class="col-12 wow fadeInUp">
                   <input class="form-control" type="text" name="name" placeholder="Your Name">
                 </div>
+                <div class="col-12 wow fadeInUp">
+                  <input class="form-control" id="phone" type="text" name="phone" placeholder="Phone Number" maxlength="10"> 
+                  <div id="phoneDiv"></div>
+                </div>
                 <div class="col-6 wow fadeInUp">
                   <input class="form-control" type="text" name="email" placeholder="Email Address">
                 </div>
@@ -496,6 +500,18 @@
 
   <script>
     $(document).ready(function () {
+      $("#phone").on('input', (e)=>{
+        let value = e.target.value;
+        let phoneno = /^\d{10}$/;
+        if(!value.match(phoneno) && value)
+          $("#phoneDiv").html(`<p class="text-danger p-2" style="font-size: 12px;">Phone number should have only numarical and max-length of 10</p>`)
+        
+        if(!value || (value.match(phoneno) && value.length == 10)){
+          $("#phoneDiv").html("");
+        }
+      })
+
+
       $("#contact-form").submit((e) => {
         e.preventDefault();
         let formData = $("#contact-form").serializeArray();
