@@ -82,19 +82,17 @@ function isEmail(email) {
 }
 
 function onlyStringKey(evt) {
-    // Only ASCII character in that range allowed
     let ASCIICode = (evt.which) ? evt.which : evt.keyCode
-    if (97<=ASCIICode && ASCIICode<=127 || 65<=ASCIICode && ASCIICode<=90)
-        return true;
+    if (97<=ASCIICode && ASCIICode<=122 || 65<=ASCIICode && ASCIICode<=90 || ASCIICode == 32)
+      return true;
     return false;
 }
 
 function onlyNumberKey(evt) {
-    // Only ASCII character in that range allowed
     let ASCIICode = (evt.which) ? evt.which : evt.keyCode
-    if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-        return false;
-    return true;
+    if (48<=ASCIICode && ASCIICode <=57)
+      return true;
+    return false;
 }
 
 function noSpace(evt){
