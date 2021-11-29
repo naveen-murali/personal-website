@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/minibar.virtual.css">
 </head>
 
-<body class="theme-red">
+<body class="theme-red" style="background-color: rgba(0, 0, 0, 0.075);">
   <!-- Back to top button -->
   <div class="btn-back_to_top">
     <span class="ti-arrow-up"></span>
@@ -79,11 +79,11 @@
   </div>
 
   <div class="vg-main-wrapper">
-    <div class="vg-page page-home" id="home" style="background-image: url(./assets/img/bg_image_2.jpg);">
+    <div class="vg-page page-home" id="home" style="background: rgba(0, 0, 0, 0.02);">
       <div class="caption wow zoomInUp">
         <h1 class="fw-normal">Welcome</h1>
         <h2 class="fw-medium fg-theme">I'm Naveen Murali</h2>
-        <p class="tagline">Web Designer & Developer</p>
+        <p class="tagline shadow">Web Designer & Developer</p>
       </div>
     </div>
 
@@ -280,9 +280,7 @@
               <img src="./assets/img/work/work-1.png" alt="">
               <div class="img-caption">
                 <h5 class="fg-theme">Netflix - Clone</h5>
-                <p>HTML5 & CSS3 <br>
-                  Just doing a project is easy but doing it in its right way is head. Because a small mistake will break
-                  everithing in it's entirity.</p>
+                <p>HTML5 & CSS3</p>
               </div>
             </div>
           </div>
@@ -298,9 +296,7 @@
               <img src="./assets/img/work/work-4.png" alt="">
               <div class="img-caption">
                 <h5 class="fg-theme">Google Store - Clone</h5>
-                <p>HTML5 & CSS3<br>
-                  A program will have to rewrite same code several time, but each time he/she will rewrites a code it
-                  will become better than last time.</p>
+                <p>HTML5 & CSS3</p>
               </div>
             </div>
           </div>
@@ -318,9 +314,7 @@
               <div class="img-caption">
                 <h5 class="fg-theme">YouTube - Clone</h5>
                 <p>
-                  HTML5 & CSS3<br>
-                  Finding right way to code and rewriting a code in a single day doesn't make you better programer, but
-                  redoing all these proccess each day will.
+                  HTML5 & CSS3
                 </p>
               </div>
             </div>
@@ -339,9 +333,7 @@
               <div class="img-caption">
                 <h5 class="fg-theme">Google Store - Clone</h5>
                 <p>
-                  HTML5, CSS3, Bootstrap5 & JavaScript<br>
-                  Even if you had everithing but if you failed to be uptodate then the life of a programer will ends
-                  there. So always find a new way to do things.
+                  HTML5, CSS3, Bootstrap5 & JavaScript
                 </p>
               </div>
             </div>
@@ -350,6 +342,21 @@
       </div>
     </div> <!-- End Portfolio page -->
 
+
+    <style>
+      .nowrap-local-3{
+          display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        /* white-space: nowrap; */
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .single-line{
+        overflow: hidden;
+        white-space: nowrap;
+      }
+    </style>
     <!-- Page Blog -->
     <div class="vg-page page-blog" id="blog">
       <h1 class="text-center fg-dark wow fadeInUp">Latest Post</h1>
@@ -361,10 +368,10 @@
               <div class="img-place">
                 <img src="./assets/img/work/blog-2.png" alt="">
               </div>
-              <div class="caption">
-                <a href="https://youtu.be/TfiKFcOt8GE" class="post-category">Progress Video</a>
-                <a href="https://youtu.be/TfiKFcOt8GE" class="post-title">This is how my first week went</a>
-                <p>Training at BroToType is hard, but if you can find happiness in that then you already won the half
+              <div class="caption" style="overflow: hidden;">
+                <a href="https://youtu.be/TfiKFcOt8GE" target='_blank' class="post-category">Progress Video</a>
+                <a href="https://youtu.be/TfiKFcOt8GE" target='_blank' class="post-title single-line" >This is how my first week...</a>
+                <p class="nowrap-local-3">Training at BroToType is hard, but if you can find happiness in that then you already won the half
                   way to success.</p>
                 <span class="post-date"><span class="sr-only">Published on</span>20 Nov 2021</span>
               </div>
@@ -377,14 +384,15 @@
                 <img src="./assets/img/work/blog-1.png" alt="">
               </div>
               <div class="caption">
-                <a href="https://youtu.be/rF1PuuI2-6c" class="post-category">Tech Seminar</a>
-                <a href="https://youtu.be/rF1PuuI2-6c" class="post-title">IPv6 | Seminar No.1</a>
-                <p>Comminication skill is an inevitable in where I'am aiming, so to improve my skill I have to
+                <a href="https://youtu.be/rF1PuuI2-6c" target='_blank' class="post-category">Tech Seminar</a>
+                <a href="https://youtu.be/rF1PuuI2-6c" target='_blank' class="post-title">IPv6 | Seminar No.1</a>
+                <p class="nowrap-local-3">Comminication skill is an inevitable in where I'am aiming, so to improve my skill I have to
                   frequently work on it.</p>
                 <span class="post-date"><span class="sr-only">Published on</span>19 Nov 2021</span>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
@@ -397,25 +405,28 @@
         <div class="row py-5">
           <div class="col-lg-12">
             <form class="vg-contact-form" id="contact-form" method="post"
-              action="https://script.google.com/macros/s/AKfycbx_kA9qYtsPCifMHioiJfKaoBpyYtB8besGmRGXrb3kC6LJ5vMr8tabm07lQT4vls-u/exec">
-              <div id="main-alert">
-              </div>
+            action="https://script.google.com/macros/s/AKfycbx_kA9qYtsPCifMHioiJfKaoBpyYtB8besGmRGXrb3kC6LJ5vMr8tabm07lQT4vls-u/exec">
+            <div id="main-alert"></div>
               <div class="form-row">
                 <div class="col-12 wow fadeInUp">
-                  <input class="form-control" type="text" name="name" onkeypress="return onlyStringKey(event)" placeholder="Your Name">
+                  <input class="form-control" type="text" name="name" onkeypress="return onlyStringKey(event)" oninput="checkEmpty('name', this)" placeholder="Your Name">
+                  <div id="name"></div>
                 </div>
                 <div class="col-12 wow fadeInUp">
-                  <input class="form-control" id="email" type="text" name="email" onkeypress="return noSpace(event)" placeholder="Email Address">
-                  <div id="phoneDiv"></div>
+                  <input class="form-control" id="emailInput" type="text" name="email" onkeypress="return noSpace(event)"  placeholder="Email Address">
+                  <div id="email"></div>
                 </div>
                 <div class="col-6 wow fadeInUp">
-                  <input class="form-control" type="tel" name="phone" onkeypress="return onlyNumberKey(event)" placeholder="Phone Number" maxlength="10"> 
+                  <input class="form-control" type="tel" name="phone" onkeypress="return onlyNumberKey(event)" oninput="checkEmpty('phone', this)" placeholder="Phone Number" maxlength="10"> 
+                  <div id="phone"></div>
                 </div>
                 <div class="col-6 wow fadeInUp">
-                  <input class="form-control" type="text" name="subject" placeholder="Subject">
+                  <input class="form-control" type="text" name="subject" oninput="checkEmpty('subject', this)" placeholder="Subject">
+                  <div id="subject"></div>
                 </div>
                 <div class="col-12 wow fadeInUp">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Enter message here.."></textarea>
+                  <textarea class="form-control" name="message" rows="6" oninput="checkEmpty('message', this)" placeholder="Enter message here.."></textarea>
+                  <div id="message"></div>
                 </div>
                 <button type="submit" class="btn btn-theme mt-3 wow fadeInUp ml-1">Send Message</button>
               </div>
@@ -457,9 +468,9 @@
               <p>Follow me</p>
               <hr class="divider">
               <ul class="list-unstyled">
-                <li><a href="https://www.instagram.com/naveen___murali/">Instagram</a></li>
-                <li><a href="https://github.com/naveen-murali">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/naveen-murali-a-v-093789191">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/naveen___murali/" target='_blank'>Instagram</a></li>
+                <li><a href="https://github.com/naveen-murali" target='_blank'>GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/naveen-murali-a-v-093789191" target='_blank'>LinkedIn</a></li>
               </ul>
             </div>
           </div>
@@ -477,8 +488,7 @@
         <div class="row justify-content-center mt-3">
           <div class="col-12">
             <p class="text-center mb-0 mt-4">
-              Copyright &copy;2020. All right reserved | This template is made with <span
-                class="ti-heart fg-theme-red"></span> by <a href="https://www.macodeid.com/">MACode ID</a>
+              Copyright &copy;2021. All right reserved | Made by <a href="/">NaveenMurali</a>
             </p>
           </div>
         </div>
