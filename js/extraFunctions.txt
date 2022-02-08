@@ -1,0 +1,152 @@
+<section class="single-section testimonials-area" id="testimonials-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-heading heading-center">
+            <h2 class="section-title">Testimonials</h2>
+            <p class="section-description">What my clients think about me</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="owl-carousel owl-theme owl-loaded owl-drag">
+          <div class="owl-stage-outer">
+            <div class="owl-stage"
+              style="transform: translate3d(-720px, 0px, 0px); transition: all 0s ease 0s; width: 2520px;">
+              <div class="owl-item cloned" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-2.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">John Santana</h6><span class="client-role">Entrepreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-3.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">Maria Wilson</h6><span class="client-role">Envato Customer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item active" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-1.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">Julia Sakura</h6><span class="client-role">Envato Customer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-2.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">John Santana</h6><span class="client-role">Entrepreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-3.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">Maria Wilson</h6><span class="client-role">Envato Customer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-1.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">Julia Sakura</h6><span class="client-role">Envato Customer</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="owl-item cloned" style="width: 360px;">
+                <div class="col-12 col-md-8 offset-md-2">
+                  <div class="single-review"><i class="icon ion-md-quote review-icon"></i>
+                    <p class="review-content">Daniel did an excellent creative job, addressing our request, and also
+                      providing his own graphic insight, he worked with us the entire way, being open to feedback and
+                      changes or edits when they arose. Quick and professional. Highly recommended, and will definitely
+                      work with him again.</p>
+                    <div class="review-client">
+                      <div class="media"><img class="img-fluid rounded-circle client-avatar" src="img/client-2.jpg"
+                          alt="Client">
+                        <div class="client-details">
+                          <h6 class="client-name">John Santana</h6><span class="client-role">Entrepreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span
+                aria-label="Next">›</span></button></div>
+          <div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button"
+              class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div>
+        </div>
+      </div>
+    </div>
+  </section>
